@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Food Discovery App Design System - Warm, appetizing colors */
+
+@layer base {
+  :root {
+    /* Food-themed color palette */
+    --background: 45 100% 98%;
+    --foreground: 25 15% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 15% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 15% 20%;
+
+    /* Warm orange primary - appetizing and energetic */
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 30 100% 85%;
+    --primary-glow: 25 100% 75%;
+
+    /* Soft cream secondary */
+    --secondary: 45 85% 92%;
+    --secondary-foreground: 25 15% 20%;
+
+    /* Fresh green accent for healthy options */
+    --accent: 120 35% 65%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 120 50% 90%;
+
+    /* Warm muted tones */
+    --muted: 40 20% 94%;
+    --muted-foreground: 25 8% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 25 95% 53%;
+
+    /* Food gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(25 95% 53%), hsl(35 100% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(45 85% 92%), hsl(50 90% 88%));
+    --gradient-accent: linear-gradient(135deg, hsl(120 35% 65%), hsl(130 40% 70%));
+    --gradient-warm: linear-gradient(180deg, hsl(45 100% 98%), hsl(40 50% 95%));
+
+    /* Food shadows with warm glow */
+    --shadow-food: 0 10px 30px -5px hsl(25 95% 53% / 0.2);
+    --shadow-card: 0 4px 20px -2px hsl(25 30% 50% / 0.1);
+    --shadow-glow: 0 0 30px hsl(25 100% 75% / 0.3);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Food-themed utility classes */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  
+  .shadow-food {
+    box-shadow: var(--shadow-food);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Bounce animation for interactive elements */
+  .bounce-gentle {
+    animation: bounce-gentle 2s infinite;
+  }
+  
+  @keyframes bounce-gentle {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-4px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+  }
+  
+  /* Pulse glow for food items */
+  .pulse-glow {
+    animation: pulse-glow 3s infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: var(--shadow-card);
+    }
+    50% {
+      box-shadow: var(--shadow-glow);
+    }
+  }
+}
