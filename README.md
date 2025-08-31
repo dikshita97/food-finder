@@ -1,6 +1,5 @@
 # 🍴 Food Finder – AI-Powered Food Discovery App  
 
-🌐 **Live Demo:** [Eat Explorer Hub](https://eat-explorer-hub.lovable.app/)  
 📂 **Repository:** [GitHub Repo](https://github.com/dikshita97/food-finder)  
 
 ## 🍽️ What You Get with Food Finder  
@@ -115,7 +114,7 @@ Discover food through creators and locals:
 <img width="1352" height="840" alt="image" src="https://github.com/user-attachments/assets/fd864362-419c-4690-8d10-3b67dc2bd009" />
 <img width="1371" height="796" alt="image" src="https://github.com/user-attachments/assets/3545a0f0-ffc3-4433-8812-66e532842261" />
 
-
+🌐 **Live Demo:** [Food-Finder](https://eat-explorer-hub.lovable.app/)  
 
 ---
 
@@ -135,3 +134,4 @@ npm run build
 ```
 
 Made with ❤️ by Dikshita Sakhare
+
